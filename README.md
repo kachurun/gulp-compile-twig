@@ -1,16 +1,16 @@
-gulp-twig-build
+gulp-compile-twig
 =================
 
 ## Installation
 
 ```sh
-npm install --save gulp-twig-build
+npm install --save gulp-compile-twig
 ```
 
 ## Usage
 
 ```javascript
-const twig_compile = require('gulp-twig-build');
+const twig_compile = require('gulp-compile-twig');
 
 gulp.task('twig', () => {
   gulp.src('./src/**/*.twig')
@@ -33,7 +33,7 @@ The options object supports the `module` and `twig` options for the [Twig compil
    Used with module. The location relative to the output directory of twig.js. (used for module dependency resolution).
 
 ```javascript
-const twig_compile = require('gulp-twig-build');
+const twig_compile = require('gulp-compile-twig');
 
 gulp.task('twig', function() {
   gulp.src('./src/**/*.twig')
