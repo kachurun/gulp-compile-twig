@@ -1,7 +1,7 @@
 {
     "name": "gulp-compile-twig",
     "description": "Compile Twig templates to javascript",
-    "version": "1.14.0",
+    "version": "1.13.3",
     "license": "MIT",
     "homepage": "https://github.com/kachurun/gulp-compile-twig",
     "repository": "git@github.com:kachurun/gulp-compile-twig.git",
@@ -16,7 +16,7 @@
         "gulp-util": "^3.0.0",
         "merge": "^1.2.0",
         "through2": "^0.6.1",
-        "twig": "1.14.0"
+        "twig": "1.13.3"
     },
     "devDependencies": {
         "proxyquire": "^1.0.1",
