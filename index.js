@@ -7,15 +7,22 @@ const PluginError = gutil.PluginError;
 
 module.exports = function(opt) {
     function transform(file, enc, cb) {
-        if (file.isNull()) return cb(null, file);
-        if (file.isStream()) return cb(new PluginError('gulp-compile-twig', 'Streaming not supported'));
+        if (file.isNull()) {
+            return cb(null, file);
+        }
+
+        if (file.isStream()) {
+            return cb(new PluginError('gulp-compile-twig', 'Streaming not supported'));
+        }
 
         const options = merge({
             twig: 'twig'
         }, opt);
 
         let data;
+
         try {
+            // Reset all caches
             Twig.cache();
 
             const template = Twig.twig({
